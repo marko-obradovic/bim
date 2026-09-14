@@ -43,10 +43,8 @@ def get_branch_log_info(directory: str, branch: str, log_format: str) -> str:
 
 
 def main() -> None:
-    # subprocess.run(["git", "fetch", "--all", "--prune"], capture_output=True, text=True)
     # directory = "/home/kovski/Documents/repos-for-bim/tmux"
     directory = "/home/kovski/Documents/git-testing/"
-
     branches = get_branches(directory)
     seen_commits = []
     remote_head = subprocess.run(
